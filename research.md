@@ -5,6 +5,7 @@ permalink: /research/
 ---
 **Duke University**
 * [The Rashomon Importance Distribution: Getting RID of Unstable, Single Model-based Variable Importance (NeurIPS 2023 Spotlight)](https://openreview.net/pdf?id=TczT2jiPT5)
+* [Interpretable Causal Inference for Analyzing Wearable, Sensor, and Other Distributional Data](files/ADDMALTS.pdf)
 
 **Data Science Institute**
 * [Estimating The Effect of COVID-19 on Tipping Behavior](files/srikar_katta_gopuff_tipping.pdf)
