@@ -1,15 +1,69 @@
----
-layout: default
----
-<div class="home">
-<div class="post">
-  <img src="/images/SrikarKattaHeadshot.jpg" alt="picture of me" ,="" style="float:left;margin:0 15px 0 0;" width="300">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Srikar Katta — Computer Science PhD, Duke University</title>
+  <meta name="description" content="Srikar Katta — PhD candidate in Computer Science at Duke University. Apple Scholar in AI/ML. Interpretable causal inference and machine learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <style>
+    body[data-headshot="circle"] .headshot { border-radius: 50%; aspect-ratio: 1/1; }
+    body[data-density="compact"] .hero { padding: 48px 0 32px; gap: 40px; }
+    body[data-density="airy"]    .hero { padding: 96px 0 80px; gap: 72px; }
+    body:not([data-show-work="true"]) #work-section { display: none; }
+    body:not([data-show-news="true"]) #news-section { display: none; }
+  </style>
+</head>
+<body data-page="home" data-headshot="rounded" data-density="regular" data-show-work="false" data-show-news="true">
 
-  <article class="post-content">
-    <p>I am a second-year computer science PhD student at Duke University advised by Cynthia Rudin and Alex Volfovsky. I am broadly interested in developing interpretable causal inference methods for complex data. My co-first-author work on stable variable importance via Rashomon sets was accepted to NeurIPS 2023 as a spotlight! Check out the work here <a href="https://openreview.net/pdf?id=TczT2jiPT5">here.</a>
+  <div id="nav-mount"></div>
 
-    <p>In the past, I was a research assistant at Temple University's Data Science Institute working with <a href="https://airoldi.github.io/">Dr. Edoardo Airoldi</a>, <a href="http://www.mcalinn.com/">Dr. Ken McAlinn</a>, and Dr. Jeanne Ruane and the <a href="https://dabi.temple.edu/">Center for Data Analytics and Biomedical Informatics</a> working with <a href = "https://dabi.temple.edu/zoran-obradovic/">Dr. Zoran Obradovic</a>. During my time at Temple University, I explored applied problems spanning the psychology behind economic decision making, tipping behavior in digital platforms and the gig economy, and charitable giving behavior. I also explored methodological network problems involving a novel mechanistic network model for producing non-scale-free degree distributions.</p>
-    
-  </article>
+  <main class="shell" id="top">
 
-</div>
+    <header class="hero">
+      <div>
+        <h1 id="hero-name"></h1>
+        <div class="role" id="hero-role"></div>
+        <div class="bio" id="hero-bio"></div>
+      </div>
+      <aside class="hero-side">
+        <img id="headshot" class="headshot" src="" alt="">
+        <div class="contact-card" id="contact"></div>
+      </aside>
+    </header>
+
+    <section class="block" id="work-section">
+      <div class="block-head">
+        <h2>Selected Work</h2>
+        <a class="meta" href="research.html">All publications →</a>
+      </div>
+      <div class="featured" id="featured"></div>
+    </section>
+
+    <section class="block" id="news-section">
+      <div class="block-head">
+        <h2>News</h2>
+        <span class="meta" style="color:var(--muted-2)">recent updates</span>
+      </div>
+      <div class="news" id="news"></div>
+    </section>
+
+  </main>
+
+  <div id="foot-mount"></div>
+  <div id="tweaks-root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script src="content.js?v=3"></script>
+  <script src="scripts/site.js?v=3"></script>
+
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="home-tweaks.jsx"></script>
+</body>
+</html>
