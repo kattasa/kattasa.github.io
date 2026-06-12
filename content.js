@@ -16,7 +16,7 @@ window.SITE = {
     { name: "Cynthia Rudin", url: "https://users.cs.duke.edu/~cynthia/" },
     { name: "Alexander Volfovsky", url: "https://volfovsky.github.io/" },
   ],
-  photo: "assets/headshot.jpg",
+  photo: "assets/profile_picture.jpg",
   email: "srikar.katta@duke.edu",
   links: {
     github:    "https://github.com/kattasa",
@@ -31,21 +31,17 @@ window.SITE = {
   // -----------------------------------------------------------
   // Short bio for the home page (keep tight — 2 paragraphs).
   bio: [
-    `I am a PhD candidate in Computer Science at Duke University,
-     advised by <a href="https://users.cs.duke.edu/~cynthia/">Cynthia Rudin</a>
-     and <a href="https://volfovsky.github.io/">Alexander Volfovsky</a>.`,
-    `My research develops methods for reliable inference and interpretation
-     in complex data environments. I am especially interested in problems
-     where the data are messy, the stakes are high, and the user needs to be
-     able to read and trust the answer. Two questions drive most of my work.
+    `I develop methods for reliable inference and interpretation
+     in environments where the data are messy and the stakes are high. 
+     Two questions drive most of my work.
      <br><br>
-     First, how do we leverage machine learning to analyze data that come
+     First, how do we create inherently trustworthy frameworks to analyze data that come
      from non-traditional sources — social media posts, wearable sensors,
-     medical images? Second, when machine-learning systems are used to
-     answer these open questions, how do we audit their reasoning and
-     understand when they can and cannot be trusted?
+     medical images? Second, when decision-makers contend with machine learning/AI systems 
+     they didn't build, don't understand, but have to use, how do we audit these black boxes'
+      reasoning and validate trustworthiness?
      <br><br>
-     My methods have been recognized with multiple early-career paper awards
+     My work has been recognized with multiple early-career paper awards
      from the American Statistical Association, spotlights at ICML and
      NeurIPS, and the Apple Scholar in AI/ML Fellowship.`,
   ],
