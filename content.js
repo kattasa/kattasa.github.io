@@ -21,8 +21,8 @@ window.SITE = {
   links: {
     github:    "https://github.com/kattasa",
     linkedin:  "https://www.linkedin.com/in/srikar-katta",
-    scholar:   "", // add Google Scholar URL when ready
-    cv:        "uploads/cv.pdf",
+    scholar:   "https://scholar.google.com/citations?user=M5xmXXQAAAAJ&hl=en", // add Google Scholar URL when ready
+    // cv:        "uploads/cv.pdf",
   },
 
   // -----------------------------------------------------------
@@ -89,10 +89,13 @@ window.SITE = {
   //  Date format is up to you ("Apr 2026", "2026-04-15", etc.)
   // -----------------------------------------------------------
   news: [
-    { date: "May 2026", text: `I'm an area chair for NeurIPS 2026.` },
-    { date: "Apr 2026", text: `Our <em>Nature Health</em> paper was covered by <href="https://www.usnews.com/news/health-news/articles/2026-04-28/daylight-saving-time-fails-to-boost-daily-steps-study-finds">U.S. News and World Report!</a>` },
-    { date: "Apr 2026", text: `Got to share our latest research on variable importance and omitted variable bias at Bocconi!` },
-    { date: "Feb 2026", text: `Our paper on the <strong>impact of daylight saving time on physical activity</strong> appeared in <em>Nature Health</em>.` },
+    { date: "May 2026", text: `I'm area chairing NeurIPS 2026.` },
+    { date: "Apr 2026", text: `Our <em>Nature Health</em> paper was covered by <href="https://www.usnews.com/news/health-news/articles/2026-04-28/daylight-saving-time-fails-to-boost-daily-steps-study-finds">U.S. News and World Report!</href>` },
+    { date: "Apr 2026", text: `Got to share our <href="https://arxiv.org/pdf/2510.12734">latest research on variable importance and omitted variable bias</href> with researchers at Bocconi!` },
+    { date: "Feb 2026", text: `Our paper on the <href="nature.com/articles/s44360-026-00115-z">impact of daylight saving time on physical activity</href> appeared in <em>Nature Health</em>.` },
+    { date: "Jan 2026", text: `Our paper on variable importance and omitted variable bias received an honorable mention in ASA's Risk Analysis Section Early Career Paper Award!` },
+    { date: "Oct 2025", text: `Organized two sessions -- one on xAI at large and another on specifically variable importance -- at INFORMS. Great talks and people!` },
+    { date: "Aug 2025", text: `Spent my summer at Apple Research, working on biomarker discovery from wearables. Super fun summer but glad to be back again!` },
   ],
 
   // -----------------------------------------------------------
@@ -102,7 +105,7 @@ window.SITE = {
   //  links: any of { pdf, arxiv, code, site, slides, bibtex }.
   // -----------------------------------------------------------
   publications: {
-    published: [
+    selected: [
       {
         authors: "J. Donnelly*, <strong>S. Katta*</strong>, E. Borgonovo, C. Rudin",
         title: "Variable Importance with Unobserved Confounding and the Rashomon Effect",
@@ -114,11 +117,11 @@ window.SITE = {
         links: { site: "https://arxiv.org/abs/2510.12734" },
       },
       {
-        authors: "H. Jeong*, <strong>S. Katta*</strong>, W. K. Wang, A. Volfovsky, J. Dunn",
-        title: "Impact of Daylight Saving Time on Physical Activity Patterns",
-        venue: "Nature Health",
-        year: 2026,
-        links: { publisher: "https://www.nature.com/articles/s44360-026-00115-z", preprint: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12838301/"},
+        authors: "G. Tierney*, <strong>S. Katta*</strong>, C. Bail, S. Hillygus, A. Volfovsky",
+        title: "A New Experimental Design for Causal Inference with Text: Can a Language Model Be Too Big?",
+        venue: "Revise & Resubmit, JRSSA",
+        year: 2025,
+        links: {preprint: "https://arxiv.org/abs/2510.08758"},
       },
       {
         authors: "<strong>S. Katta</strong>, H. Parikh, C. Rudin, A. Volfovsky",
@@ -129,6 +132,15 @@ window.SITE = {
         featured: true,
         blurb: "Matching-based causal estimators for messy, high-dimensional data from wearables and sensors — with answers you can read.",
         links: { site: "https://proceedings.mlr.press/v238/katta24a.html" },
+      },
+    ],
+    other: [
+      {
+        authors: "H. Jeong*, <strong>S. Katta*</strong>, W. K. Wang, A. Volfovsky, J. Dunn",
+        title: "Impact of Daylight Saving Time on Physical Activity Patterns",
+        venue: "Nature Health",
+        year: 2026,
+        links: { publisher: "https://www.nature.com/articles/s44360-026-00115-z", preprint: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12838301/"},
       },
       {
         authors: "C. Rudin, C. Zhong*, L. Semenova*, M. Seltzer*, R. Parr*, J. Liu*, <strong>S. Katta*</strong>, J. Donnelly*, H. Chen*, Z. Boner*",
@@ -156,8 +168,6 @@ window.SITE = {
         awards: ["SRNDNA Open Data Award"],
         links: { site: "https://www.nature.com/articles/s44271-025-00266-x" },
       },
-    ],
-    submitted: [
       {
         authors: "A. van Loon, <strong>S. Katta</strong>, C. A. Bail, D. S. Hillygus, A. Volfovsky",
         title: "Designing Social Media to Promote Productive Political Dialogue on a New Research Platform",
@@ -165,15 +175,6 @@ window.SITE = {
         year: 2025,
         links: {preprint: "https://osf.io/preprints/psyarxiv/dngcj"},
       },
-      {
-        authors: "G. Tierney*, <strong>S. Katta*</strong>, C. Bail, S. Hillygus, A. Volfovsky",
-        title: "A New Experimental Design for Causal Inference with Text: Can a Language Model Be Too Big?",
-        venue: "Revise & Resubmit, JRSSA",
-        year: 2025,
-        links: {preprint: "https://arxiv.org/abs/2510.08758"},
-      },
-    ],
-    inPrep: [
       {
         authors: "<strong>S. Katta</strong>, H. Parikh, C. Rudin, A. Volfovsky, H. Sun, B. Westover",
         title: "Why Machine Learning Your Biological Age Fails",

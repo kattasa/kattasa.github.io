@@ -55,7 +55,7 @@
     if (S.links.cv)       links.push({k:"cv",       v:`<a href="${esc(S.links.cv)}">PDF</a>`});
     if (S.links.scholar)  links.push({k:"scholar",  v:`<a href="${esc(S.links.scholar)}">Google Scholar</a>`});
     if (S.links.github)   links.push({k:"github",   v:`<a href="${esc(S.links.github)}">@${esc(S.links.github.split('/').pop())}</a>`});
-    if (S.links.linkedin) links.push({k:"linkedin", v:`<a href="${esc(S.links.linkedin)}">LinkedIn</a>`});
+    if (S.links.linkedin) links.push({k:"linkedin", v:`<a href="${esc(S.links.linkedin)}">@${esc(S.links.linkedin.split('/').pop())}</a>`});
     el.innerHTML = links.map(l =>
       `<div class="row"><span class="k">${l.k}</span><span>${l.v}</span></div>`
     ).join("");
@@ -100,20 +100,20 @@
     renderContact("contact");
 
     // Featured publications (those marked featured: true)
-    const featured = S.publications.published.filter(p => p.featured);
-    $("featured").innerHTML = featured.map(p => `
-      <div class="item">
-        <div class="yr">${esc(p.year)}</div>
-        <div>
-          <div class="title">${(() => { const u=(p.links||{}).site||(p.links||{}).pdf||''; return u ? `<a href="${esc(u)}" style="color:var(--ink);border:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">${esc(p.title)}</a>` : esc(p.title); })()}</div>
-          <div class="blurb">${esc(p.blurb || "")}</div>
-          <div class="meta">
-            <span class="venue">${esc(p.venue)}</span>
-            ${p.awards ? p.awards.map(a => `<span class="award">★ ${esc(a)}</span>`).join("") : ""}
-          </div>
-        </div>
-      </div>
-    `).join("");
+    // const featured = S.publications.published.filter(p => p.featured);
+    // $("featured").innerHTML = featured.map(p => `
+    //   <div class="item">
+    //     <div class="yr">${esc(p.year)}</div>
+    //     <div>
+    //       <div class="title">${(() => { const u=(p.links||{}).site||(p.links||{}).pdf||''; return u ? `<a href="${esc(u)}" style="color:var(--ink);border:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">${esc(p.title)}</a>` : esc(p.title); })()}</div>
+    //       <div class="blurb">${esc(p.blurb || "")}</div>
+    //       <div class="meta">
+    //         <span class="venue">${esc(p.venue)}</span>
+    //         ${p.awards ? p.awards.map(a => `<span class="award">★ ${esc(a)}</span>`).join("") : ""}
+    //       </div>
+    //     </div>
+    //   </div>
+    // `).join("");
 
     // Recent news (most recent first)
     $("news").innerHTML = S.news.map(n => `
@@ -129,9 +129,9 @@
   if (PAGE === "research") {
     // Full publications grouped
     const groups = [
-      { key: "published", label: "Published" },
-      { key: "submitted", label: "Submitted & Under Review" },
-      { key: "inPrep",    label: "In Preparation" },
+      { key: "selected", label: "Selected Papers" },
+      { key: "other", label: "Remaining Work" },
+      // { key: "inPrep",    label: "In Preparation" },
     ];
     $("pubs").innerHTML = groups.map(g => {
       const list = S.publications[g.key] || [];
