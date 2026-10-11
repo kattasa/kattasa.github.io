@@ -80,7 +80,7 @@
           <div class="title">${titleHtml}</div>
           <div class="authors">${p.authors}</div>
           <div class="venue" style="margin-bottom:6px">${esc(p.venue)}</div>
-          ${p.awards ? `<div class="badges">${p.awards.map(a => `<span class="badge award">★ ${esc(a)}</span>`).join("")}</div>` : ""}
+          ${p.awards ? `<div class="badges">${p.awards.map(a => `<span class="badge award">🏆 ${esc(a)}</span>`).join("")}</div>` : ""}
           ${linkHtml ? `<div class="links">${linkHtml}</div>` : ""}
         </div>
       </div>`;
@@ -109,7 +109,7 @@
     //       <div class="blurb">${esc(p.blurb || "")}</div>
     //       <div class="meta">
     //         <span class="venue">${esc(p.venue)}</span>
-    //         ${p.awards ? p.awards.map(a => `<span class="award">★ ${esc(a)}</span>`).join("") : ""}
+    //         ${p.awards ? p.awards.map(a => `<span class="award">🏆 ${esc(a)}</span>`).join("") : ""}
     //       </div>
     //     </div>
     //   </div>
@@ -129,8 +129,8 @@
   if (PAGE === "research") {
     // Full publications grouped
     const groups = [
-      { key: "selected", label: "Selected Papers" },
-      { key: "other", label: "Remaining Work" },
+      { key: "selected", label: "Selected Papers and Awards" },
+      { key: "other", label: "Remaining work and awards" },
       // { key: "inPrep",    label: "In Preparation" },
     ];
     $("pubs").innerHTML = groups.map(g => {

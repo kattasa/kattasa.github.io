@@ -89,12 +89,13 @@ window.SITE = {
   //  Date format is up to you ("Apr 2026", "2026-04-15", etc.)
   // -----------------------------------------------------------
   news: [
+    { date: "Oct 2026", text: `I was recognized as a Top Area Chair at NeurIPS 2026!` },
     { date: "May 2026", text: `I'm area chairing NeurIPS 2026.` },
     { date: "Apr 2026", text: `Our <em>Nature Health</em> paper was covered by <href="https://www.usnews.com/news/health-news/articles/2026-04-28/daylight-saving-time-fails-to-boost-daily-steps-study-finds">U.S. News and World Report!</href>` },
-    { date: "Apr 2026", text: `Got to share our <href="https://arxiv.org/pdf/2510.12734">latest research on variable importance and omitted variable bias</href> with researchers at Bocconi!` },
+    { date: "Apr 2026", text: `Presented our <href="https://arxiv.org/pdf/2510.12734">latest research on variable importance and omitted variable bias</href> at Bocconi's Decision Sciences department seminar!` },
     { date: "Feb 2026", text: `Our paper on the <href="nature.com/articles/s44360-026-00115-z">impact of daylight saving time on physical activity</href> appeared in <em>Nature Health</em>.` },
     { date: "Jan 2026", text: `Our paper on variable importance and omitted variable bias received an honorable mention in ASA's Risk Analysis Section Early Career Paper Award!` },
-    { date: "Oct 2025", text: `Organized two sessions -- one on xAI at large and another on specifically variable importance -- at INFORMS. Great talks and people!` },
+    { date: "Oct 2025", text: `Organized two sessions -- one on xAI at large and another specifically on variable importance -- at INFORMS. Great talks and people!` },
     { date: "Aug 2025", text: `Spent my summer at Apple Research, working on biomarker discovery from wearables. Super fun summer but glad to be back again!` },
   ],
 
@@ -190,6 +191,7 @@ window.SITE = {
   //  AWARDS
   // -----------------------------------------------------------
   awards: [
+    { year: 2026, title: "Top Area Chair", org: "NeurIPS" },
     { year: 2026, title: "Risk Analysis Section Early Career Paper Award (Honorable Mention)", org: "American Statistical Association" },
     { year: 2025, title: "Apple Scholar in AI/ML Fellowship", org: "Apple" },
     { year: 2024, title: "Biometrics Section Early Career Paper Award", org: "American Statistical Association" },
@@ -372,6 +374,12 @@ window.SITE = {
         course: "Causal Inference in Data Analysis",
         institution: "Duke University",
         year: 2025,
+      },
+      {
+        role: "Teaching Assistant",
+        course: "Special Topics in Computer Science: Data Science",
+        institution: "Duke University",
+        year: 2023,
       },
       {
         role: "Teaching Assistant",
