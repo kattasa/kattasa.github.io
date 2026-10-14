@@ -171,10 +171,10 @@ window.SITE = {
       },
       {
         authors: "A. van Loon, <strong>S. Katta</strong>, C. A. Bail, D. S. Hillygus, A. Volfovsky",
-        title: "Designing Social Media to Promote Productive Political Dialogue on a New Research Platform",
-        venue: "Revise & Resubmit at Nature Scientific Reports",
+        title: "Designing Social Media to Promote Productive Political Dialogue",
+        venue: "Nature Scientific Reports",
         year: 2025,
-        links: {preprint: "https://osf.io/preprints/psyarxiv/dngcj"},
+        links: {site: "https://www.nature.com/articles/s41598-026-63437-8"},
       },
       {
         authors: "<strong>S. Katta</strong>, H. Parikh, C. Rudin, A. Volfovsky, H. Sun, B. Westover",
